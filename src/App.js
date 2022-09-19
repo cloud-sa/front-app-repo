@@ -41,7 +41,7 @@ function App(props) {
   const [query, setQuery] = useState('aws');
   const [search, setSearch] = useState('aws');
 
-  var url = `http://k8s-default-backendi-6566bc7d31-167474133.ap-northeast-2.elb.amazonaws.com/contents/${search}`
+  var url = ``
 
   useEffect(() => {
     const fetchData = async () => {
@@ -64,7 +64,7 @@ function App(props) {
             align="center"
             className={classes.title}
           >
-            EKS DEMO Blog
+            CI /CD Test with EKS !
           </Typography>
           {new Date().toLocaleTimeString()}
         </Toolbar>
