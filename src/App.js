@@ -41,7 +41,7 @@ function App(props) {
   const [query, setQuery] = useState('aws');
   const [search, setSearch] = useState('aws');
 
-  var url = ``
+  var url = `{backend-ingress ADDRESS}/contents/${search}`
 
   useEffect(() => {
     const fetchData = async () => {
